@@ -1,0 +1,15 @@
+--- bluez-kernel-2.3/bnep/core.c.orig	Fri Nov  1 18:48:51 2002
++++ bluez-kernel-2.3/bnep/core.c	Tue Apr 15 15:04:42 2003
+@@ -458,7 +458,12 @@
+         sigfillset(&current->blocked);
+ 	flush_signals(current);
+ 
++#ifdef MAX_RT_PRIO
++	/* kernel with O(1) scheduler */
++	user_set_nice(current, -15);
++#else
+ 	current->nice = -15;
++#endif
+ 
+         set_fs(KERNEL_DS);
+ 
