@@ -15,7 +15,7 @@ Source0:	http://bluez.sourceforge.net/download/%{name}-%{version}.tar.gz
 Source1:	http://bluez.sourceforge.net/download/hci_usb-031803.tar.gz
 # Source1-md5:	d53870ee2d3b1b309364a01a799cf87e
 Patch0:		%{name}-O1.patch
-URL:		http://bluez.sourceforge.net/
+URL:		http://www.bluez.org/
 #BuildRequires:	kernel-source >= 2.4.20
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
