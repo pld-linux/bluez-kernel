@@ -3,7 +3,7 @@
 # - dependencies
 # - conflict with old bluez modules in kernel
 Summary:	Bluetooth kernel modules
-Summary(pl.UTF-8):   Moduły jądra Bluetooth
+Summary(pl.UTF-8):	Moduły jądra Bluetooth
 Name:		bluez-kernel
 Version:	2.3
 Release:	1
@@ -27,7 +27,7 @@ Moduły jądra Bluetooth.
 
 %package -n kernel-net-bluez
 Summary:	Bluetooth kernel modules
-Summary(pl.UTF-8):   Moduły jądra Bluetooth
+Summary(pl.UTF-8):	Moduły jądra Bluetooth
 Group:		Base/Kernel
 
 %description -n kernel-net-bluez
